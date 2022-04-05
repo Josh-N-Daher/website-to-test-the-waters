@@ -1,47 +1,270 @@
 <!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <meta name='color-scheme' content='light dark'>
-        <link rel="icon" type="image/png" sizes="32x32" href="lock.png">
-        <title>hello...?</title>
-    </head>
-    <body>
-        <h1>Timeless</h1>
-        <p>One day, two star-crossed lovers met.</p>
-        <p>He was a scientist, she was a teacher.</p>
-        <p>Together, they made a shining star.</p>
-        <p>A daughter.</p>
-        <p>She brought tons of joy to their lives.</p>
-        <p>One day, the two lovers mysteriously split apart.</p>
-        <p>Neither wanted to see the other ever again.</p>
-        <p>Custody was granted to the father, and life continued.</p>
-        <p>...</p>
-        <h2>5 YEARS LATER...</h2>
-        <p>The star's bright light went out.</p>
-        <p>The daughter died.</p>
-        <p>The father, driven by greif, started working on a machine.</p>
-        <p>The machine's purpose was to bring his daughter back.</p>
-        <p>But it failed.</p>
-        <p>He saw too much.</p>
-        <p>He was driven mad.</p>
-        <p>He is now ruler over an army of creatures who have been brainwashed to bring chaos and tyranny to these fair lands.</p>
-        <p>...</p>
-        <p>"Nikolas"...</p>
-        <p>"Ed"...</p>
-        <p>"Susie"...</p>
-        <p>"Sam"...</p>
-        <p>Save him.</p>
-        <p>Bring peace to the world.</p>
-        <p>Only you four have this power.</p>
-        <p>Use it wisely.</p>
-    </body>
-</html>
-<div class="A MESSAGE, FOR THOSE WHO TAKE THE TIME TO LISTEN:">
-    <!-- it's all a lie.-->
-    <!-- from now on, don't believe anything you're told.-->
-    <!-- don't trust anyone other than the ones you call "friends".-->
-    <!-- and even still...-->
-    <!-- ... please.-->
-    <!-- it's for your own good.-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>OHH WHATS THISS???</title>
+
+    <link href="bootsrap-or-whatever.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,100,700,900" rel="stylesheet" type="text/css">
+    <link href="orangutan (1).png" rel="icon" type="image/png">
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background-color: #404040;
+            background: radial-gradient(ellipse at center, #333333 13%, #262626 100%);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .blur {
+            -webkit-filter: blur(10px);
+            filter: blur(10px);
+            opacity: 0.6;
+        }
+
+        .popspace {
+            opacity: 1.0;
+            position: absolute;
+            top: 190px;
+            left: 430px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .pophead {
+            color: #00AAD7;
+            margin: 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        .pophead2 {
+            color: #AFAFAF;
+            padding-top: 5;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 11px;
+            font-weight: 100;
+        }
+
+        .form {
+            border-radius:2px;
+            padding: 20px 30px;
+            box-shadow: 0 0 15px;
+            font-size:14px;
+            font-weight: bold;
+            max-width: 350px;
+            margin: 20px 250px 0 35px;
+            float: left;
+        }
+
+        .content {
+            max-width: 760px;
+            padding: 0 20px;
+            margin: 30px auto;
+            color: #c7c7c7;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 100;
+            height: 530px;
+            background-repeat: no-repeat;
+            background-size: 32%;
+            background-position-y: 200px;
+            background-position-x: 50%;
+            background-position: center center;
+            background-image: url('/assets/lock-icon.png');
+        }
+
+        .content h1 {
+            color: #00AAD7;
+            font-size: 60px;
+            margin: 0;
+            margin-bottom: -20px;
+        }
+
+        .bypassCont {
+            margin-top: 40px;
+        }
+
+        .bypassCont label {
+          border: 0;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+        }
+
+        .content i {
+            display: block;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            max-width: 300px;
+            width: 100%;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 310px;
+        }
+
+        .bypassCont i {
+            display: none;
+        }
+
+        .bypassCont button.bypassfilter {
+            border-radius: 4px;
+            /* Bypass Button: */
+            background-image: -webkit-linear-gradient(89deg, #00AAD7 0%, #2DBCE2 81%);
+            background-image: linear-gradient(-1deg, #00AAD7 0%, #2DBCE2 81%);
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,0.38);
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 25px;
+            width: 250px;
+            margin-top: 235px;
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bypassCont button.bypassfilter::after {
+            font-size: 30px;
+            position: absolute;
+            content: ">";
+            color: #2c5b75;
+            top: 10px;
+            right: 20px;
+            transform:scale(1,1.5);
+            -webkit-transform:scale(1,1.5);
+        }
+
+        .bypassCont button, .bypassCont input {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .whitelist {
+            margin-top: 10px;
+            font-size: 16px;
+            text-decoration: underline;
+            cursor: pointer;
+            color: #9c9c9c;
+        }
+
+        #password {
+            width: 292px;
+            height: 37px;
+            font-weight: 100;
+            padding: 10px;
+        }
+
+        #unblockreq {
+            height:130px;
+            width: 290px;
+            font-weight: 100;
+            padding: 10px;
+        }
+
+        .but {
+            background-image: linear-gradient(-1deg, #35B0D1 0%, #35B0D1 81%);
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,0.38);
+            border: none;
+            margin-left: 95;
+            color: rgb(155, 213, 221);
+            font-size: 16px;
+            font-weight: 300;
+            width: 100px;
+            height: 35px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #logindiv,
+        #unblockdiv {
+            height: 0;
+            width: 0;
+        }
+
+        .outer {
+            display: table;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .but:hover {
+            color: #E1E9F0;
+        }
+    </style>
+</head>
+
+<body>
+<div class="outer">
+    <div class="middle">
+    
+    <div class="content">
+  <h1>
+    <strong>
+      <i class="fa fa-exclamation-triangle"></i>
+      OH HI THERE!!!
+   </strong>
+  </h1>
+  <br />
+  IT SEEMS AS THOUGH YOU HAVE REACHED AN INEXISTENT SPACE. PLEASE CONTINUE.
 </div>
+    <div id="logindiv" class = "popspace" style="display: none;">
+        <div class="form" id="login" style="background-color: #DBDBDB;">
+            <div style="padding: 10px;">
+                <h3 class="pophead">Enter Password</h3>
+                <p class ="pophead2 passapp">All Attempts are Logged.</p>
+            </div>
+            <input type="password" id="password" placeholder="Password"/> <br/><br/>
+            <button class="btn btn-default btn-xs but submitAll">Bypass</button>
+        </div>
+    </div>
+
+    <div id="unblockdiv" class = "popspace" style="top:178px; display: none;">
+        <div class="form" style="background-color: #DBDBDB;">
+            <div style="padding: 10px;">
+                <h3 class="pophead unblocktitle">Why?</h3>
+                <p class="pophead2 unblockapp">Limit to 300 characters.</p>
+            </div>
+            <textarea type="text" id="unblockreq" placeholder="Explain"></textarea>
+            <button class="btn btn-default btn-xs but submitcont" style="margin-left: 100px; margin-top: 20px;">Submit</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','anylitics.js','ga');
+
+    ga('create', 'UA-20904415-13', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="scripts.js"></script>
+<script>
+    $(function() {
+        $('title').text($('.content h1 strong').text());
+    });
+</script>
+</body>
+</html>
